@@ -2,6 +2,10 @@
 
 Le code de l'application character-sheet et la documentation (les règles et autres aides) du JDR que je meujeute avec les "zautres" joueurs.
 
+## MIT License
+
+All this code and documentation is released under the MIT public license.
+
 ## Installation
 
 - Créer une BD alexgaliddhelp accessible par le user root, sans password.

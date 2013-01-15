@@ -36,7 +36,7 @@ class App
             'css/normalize.css',
             'css/base.css'
         );
-        
+
         //JS
         static::$jsFiles = array(
             'js/lib/jquery-min.js',
@@ -44,30 +44,30 @@ class App
             'js/lib/backbone-min.js',
             'js/vars.js'
         );
-            //Models
-        $jsModelsIterator = new FilesystemIterator(PATH_JS.DS.'models', FilesystemIterator::SKIP_DOTS);
-        foreach($jsModelsIterator as $file) {
-           static::$jsFiles[] = 'js/models/'.$file->getFilename();
+        //Models
+        $jsModelsIterator = new FilesystemIterator(PATH_JS . DS . 'models', FilesystemIterator::SKIP_DOTS);
+        foreach ($jsModelsIterator as $file) {
+            static::$jsFiles[] = 'js/models/' . $file->getFilename();
         }
-            //Collections
-        $jsCollectionsIterator = new FilesystemIterator(PATH_JS.DS.'collections', FilesystemIterator::SKIP_DOTS);
-        foreach($jsCollectionsIterator as $file) {
-           static::$jsFiles[] = 'js/collections/'.$file->getFilename();
+        //Collections
+        $jsCollectionsIterator = new FilesystemIterator(PATH_JS . DS . 'collections', FilesystemIterator::SKIP_DOTS);
+        foreach ($jsCollectionsIterator as $file) {
+            static::$jsFiles[] = 'js/collections/' . $file->getFilename();
         }
-            //Views
-        $jsViewsIterator = new FilesystemIterator(PATH_JS.DS.'views', FilesystemIterator::SKIP_DOTS);
-        foreach($jsViewsIterator as $file) {
-           static::$jsFiles[] = 'js/views/'.$file->getFilename();
+        //Views
+        $jsViewsIterator = new FilesystemIterator(PATH_JS . DS . 'views', FilesystemIterator::SKIP_DOTS);
+        foreach ($jsViewsIterator as $file) {
+            static::$jsFiles[] = 'js/views/' . $file->getFilename();
         }
-            //App
+        //App
         static::$jsFiles[] = 'js/app.js';
 
         //Templates
         $jsTemplatesIterator = new FilesystemIterator(PATH_JS_TEMPLATES, FilesystemIterator::SKIP_DOTS);
-        foreach($jsTemplatesIterator as $file) {
-            static::$jsTemplatesFiles[] = PATH_JS_TEMPLATES.DS.$file->getFilename();
+        foreach ($jsTemplatesIterator as $file) {
+            static::$jsTemplatesFiles[] = PATH_JS_TEMPLATES . DS . $file->getFilename();
         }
-        
+
         //Init REST
         Rest::init();
     }
@@ -113,7 +113,7 @@ class App
     {
         $value = static::i18nGet($key);
         if ($option == 'F') {
-            $value = mb_strtoupper(mb_substr($value, 0, 1)).mb_substr($value, 1);
+            $value = mb_strtoupper(mb_substr($value, 0, 1)) . mb_substr($value, 1);
         } else if ($option == 'L') {
             $value = mb_strtolower($value);
         } else {
