@@ -20,10 +20,10 @@ class App
     private static $jsFiles = array();
     private static $jsTemplatesFiles = array();
     private static $config = array(
-        'bd_host' => 'localhost|mysql5-27.perso',
-        'bd_login' => 'root|alexgaliddhelp',
-        'bd_password' => '|ltslEee0',
-        'bd_name' => 'alexgaliddhelp|alexgaliddhelp'
+        'bd_host' => 'localhost|?',
+        'bd_login' => 'root|?',
+        'bd_password' => '|?',
+        'bd_name' => 'alexgaliddhelp|?'
     );
 
     public static function init()
