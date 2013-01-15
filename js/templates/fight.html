@@ -1,0 +1,32 @@
+<script type="text/template" id="tmpl-fight">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th><%= base %></th>
+                <th><%= bonus %></th>
+                <th><%= total %></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= action %></td>
+                <td><%= action_base %></td>
+                <td><input type="text" id="action_bonus" value="<%= action_bonus %>" /></td>
+                <td><%= action_total %></td>
+            </tr>
+            <tr>
+                <td><%= init %></td>
+                <td><%= init_base %></td>
+                <td><input type="text" id="init_bonus" value="<%= init_bonus %>" /></td>
+                <td><%= init_total %></td>
+            </tr>
+            <tr>
+                <td><%= mvt %></td>
+                <td><%= mvt_base %></td>
+                <td><input type="text" id="mvt_bonus" value="<%= mvt_bonus %>" /></td>
+                <td><%= mvt_total %></td>
+            </tr>
+        </tbody>
+    </table>
+</script>

@@ -1,0 +1,28 @@
+<script type="text/template" id="tmpl-armory">
+    <table>
+        <thead>
+            <tr>
+                <th><%= name %></th>
+                <th><%= hit %></th>
+                <th><%= damage %></th>
+                <th><%= crit %></th>
+                <th><%= range %></th>
+                <th><%= init %></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% _.forEach(armory, function (item) { %>
+            <tr>
+                <td><%= item['name'] %></td>
+                <td><%= item['hit'] %></td>
+                <td><%= item['damage'] %></td>
+                <td><%= item['crit'] %></td>
+                <td><%= item['range'] %></td>
+                <td><%= item['init'] %></td>
+                <td><%= item['misc'] %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</script>

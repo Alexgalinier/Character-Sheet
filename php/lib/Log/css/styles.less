@@ -1,0 +1,133 @@
+/*
+ * This file is commonly the only one to import in 
+ * your html documents.
+ */
+
+
+/* [Mang-css] Variables
+   ----------------------------------------------- */
+
+@color-bg: rgb(220,220,220);
+@color-text: rgb(51,51,51);
+@color-link: rgb(65,180,210);
+@color-title: rgb(0,0,0);
+@color-selection-bg: rgb(55,80,130);
+@color-selection: rgb(255,255,255);
+@color-hr: rgb(210,210,210);
+
+@font-family : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@font-size : 15px;
+
+@grid-column-width: 50;
+@grid-gutter-width: 5;
+@grid-columns: 20;
+
+
+
+/* Variables
+   ----------------------------------------------- */
+
+
+
+
+/* [Mang-css] Imports
+   ----------------------------------------------- */
+
+@import "mang-css/mang-base.less";
+@import "mang-css/mang-css3.less";
+@import "mang-css/mang-helpers.less";
+@import "mang-css/mang-grid.less";
+
+
+
+/* Imports
+   ----------------------------------------------- */
+
+
+
+/* Styles
+   ----------------------------------------------- */
+
+body {
+    .content {
+        min-width: 1150px;
+        padding-bottom: 10px;
+
+        .filter {
+            padding: 3px 10px;
+            line-height: 36px;
+            border-bottom: 1px solid black;
+            .gradient-v(rgb(40,40,40), rgb(60,60,60), rgb(30,30,30));
+            color: white;
+            
+            b {
+                text-shadow: 0 0 8px white, 0 0 8px white;
+            }
+
+            #search-text {
+                font-size: 15px;
+                background: white;
+                border: none;
+                border-radius: 7px;
+                .inner-shadow();
+                padding: 3px 10px;
+                height: 32px;
+                line-height: 32px;
+                width: 250px;
+                margin-left: 20px;
+            }
+        }
+
+        .log-div {
+            margin: 15px auto;
+            width: 90%;
+            border-radius: 7px;
+            background: white;
+            .box-shadow(0, 1px, 3px, rgba(0,0,0,.5));
+
+            .log-line {
+                .row();
+                border-bottom: 1px solid rgb(200,200,200);
+                padding: .3em .7em;
+
+                &:first-child {
+                    border-radius: 7px 7px 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 0 7px 7px;
+                }
+
+                &:hover {
+                    .gradient-v(rgb(115,210,255), rgb(90,180,230), rgb(115,210,255));
+                    border-bottom: 1px solid rgb(90,180,230);
+                }
+
+                .log-hour {
+                    .column-percent-no-margin(2);
+                }
+
+                .log-content {
+                    .column-percent-no-margin(18);
+                }
+            }
+        }
+
+        #date-day, #date-month, #hour-from-hour, #hour-from-minute, #hour-to-hour, #hour-to-minute {
+            width: 40px;
+            .center;
+        }
+
+        #date-year {
+            width: 118px;
+            .center;
+        }
+
+    }
+}
+
+
+
+/* Print
+   ----------------------------------------------- */
+
+@import "mang-css/mang-print.less";

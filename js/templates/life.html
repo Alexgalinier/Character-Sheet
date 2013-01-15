@@ -1,0 +1,95 @@
+<script type="text/template" id="tmpl-life">
+    <table>
+        <tr>
+            <td><%= superficial_label %></td>
+            <td>
+                <%  
+                    var life, checked, img;
+                    for(life = 1; life <= superficial_total; life++) { 
+                        if( life <= superficial) { 
+                            checked = 'checked="checked"';
+                            img = 'images/checkbox-checked.png';
+                        } else {
+                            checked = '';
+                            img = 'images/checkbox-unchecked.png';
+                        }
+                %>
+                <input type="checkbox" class="superficial" <%= checked %>/><img src="<%= img %>" />
+                <% } %>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><%= light_label %></td>
+            <td>
+                <%  
+                    for(life = 1; life <= light_total; life++) { 
+                        if( life <= light) { 
+                            checked = 'checked="checked"';
+                            img = 'images/checkbox-checked.png';
+                        } else {
+                            checked = '';
+                            img = 'images/checkbox-unchecked.png';
+                        }
+                %>
+                <input type="checkbox" class="light" <%= checked %>/><img src="<%= img %>" />
+                <% } %>
+            </td>
+            <td>(- 10)</td>
+        </tr>
+        <tr>
+            <td><%= intermediate_label %></td>
+            <td>
+                <%  
+                    for(life = 1; life <= intermediate_total; life++) { 
+                        if( life <= intermediate) { 
+                            checked = 'checked="checked"';
+                            img = 'images/checkbox-checked.png';
+                        } else {
+                            checked = '';
+                            img = 'images/checkbox-unchecked.png';
+                        }
+                %>
+                <input type="checkbox" class="intermediate" <%= checked %>/><img src="<%= img %>" />
+                <% } %>
+            </td>
+            <td>(- 20)</td>
+        </tr>
+        <tr>
+            <td><%= serious_label %></td>
+            <td>
+                <%  
+                    for(life = 1; life <= serious_total; life++) { 
+                        if( life <= serious) { 
+                            checked = 'checked="checked"';
+                            img = 'images/checkbox-checked.png';
+                        } else {
+                            checked = '';
+                            img = 'images/checkbox-unchecked.png';
+                        }
+                %>
+                <input type="checkbox" class="serious" <%= checked %>/><img src="<%= img %>" />
+                <% } %>
+            </td>
+            <td>(- 50)</td>
+        </tr>
+        <tr>
+            <td><%= death_label %></td>
+            <td>
+                <%  
+                    for(life = 1; life <= death_total; life++) { 
+                        if( life <= death) { 
+                            checked = 'checked="checked"';
+                            img = 'images/checkbox-checked.png';
+                        } else {
+                            checked = '';
+                            img = 'images/checkbox-unchecked.png';
+                        }
+                %>
+                <input type="checkbox" class="death" <%= checked %>/><img src="<%= img %>" />
+                <% } %>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</script>

@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^([0-9]+)$ index.php?player=$1 [L]
+RewriteRule ^rest/([a-zA-Z_]+)/([0-9]+)$ index.php?request=rest&task=$1&id=$2 [L]
+RewriteRule ^rest/([a-zA-Z_]+)$  index.php?request=rest&task=$1 [L]
+RewriteRule ^rest$  index.php?request=rest [L]

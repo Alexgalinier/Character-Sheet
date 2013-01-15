@@ -1,0 +1,61 @@
+<script type="text/template" id="tmpl-player-infos">
+    <div id="player-infos-div">
+        <div>
+            <img src="images/<%= name %>.jpg" />
+        </div>
+        <div>
+            <input type="text" id="name" value="<%= name %>" />
+            <br/>
+            <span id="player-real-name"><%= player_real_name %></span>
+            <br/>
+            <span id="aug-spend-total"><%= aug_count %> + <%= aug_lost %> = <b><%= (parseInt(aug_lost) + parseInt(aug_count)) %></b> / <%= aug_total %></span>
+        </div>
+        <div>
+            <div>
+                <label><%= origin_name %></label>
+                <select id="origin">
+                    <% _.forEach(origins, function (item) { %>
+                    <option value="<%= item['name'] %>" <% if(item['name'] == origin) { %> selected="selected" <% } %>><%= item['name'] %></option>
+                    <% }) %>
+                </select>
+            </div>
+            <div>
+                <label><%= race_label %></label>
+                <select id="race">
+                    <% _.forEach(races, function (item) { %>
+                    <option value="<%= item['name'] %>" <% if(item['name'] == race) { %> selected="selected" <% } %>><%= item['name'] %></option>
+                    <% }) %>
+                </select>
+            </div>
+            <div>
+                <label><%= path_label %></label>
+                <select id="path">
+                    <% _.forEach(paths, function (item) { %>
+                    <option value="<%= item['name'] %>" <% if(item['name'] == path) { %> selected="selected" <% } %>><%= item['name'] %></option>
+                    <% }) %>
+                </select>
+            </div>
+        </div>
+        <div id="origin-number"><%= origin_number %></div>
+        <div>
+            <div id="menu">
+                <div id="menu-main" class="current">
+                    <img src="images/main.png" />
+                    <label>Général</label>
+                </div>
+                <div id="menu-skills">
+                    <img src="images/skills.png" />
+                    <label>Compétences</label>
+                </div>
+                <div id="menu-spell">
+                    <img src="images/spell.png" />
+                    <label>Sorts</label>
+                </div>
+                <div id="menu-misc">
+                    <img src="images/pen.png" />
+                    <label>Divers</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,128 @@
+<script type="text/template" id="tmpl-charac">
+    <div class="float" id="charac-content">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><%= base %></th>
+                    <th><%= bonus %></th>
+                    <th><%= aug %></th>
+                    <th><%= miss %></th>
+                    <th>%</th>
+                    <th><%= total %></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= pow_name %></td>
+                    <td><%= pow_base %></td>
+                    <td><input type="number" id="pow_bonus" value="<%= pow_bonus %>" /></td>
+                    <td><input type="number" id="pow_aug" value="<%= pow_aug %>" /></td>
+                    <td><input type="number" id="pow_miss" value="<%= pow_miss %>" /></td>
+                    <td><%= pow_success_perc %></td>
+                    <td><%= pow_total %></td>
+                </tr>
+                <tr>
+                    <td><%= agi_name %></td>
+                    <td><%= agi_base %></td>
+                    <td><input type="number" id="agi_bonus" value="<%= agi_bonus %>" /></td>
+                    <td><input type="number" id="agi_aug" value="<%= agi_aug %>" /></td>
+                    <td><input type="number" id="agi_miss" value="<%= agi_miss %>" /></td>
+                    <td><%= agi_success_perc %></td>
+                    <td><%= agi_total %></td>
+                </tr>
+                <tr>
+                    <td><%= spe_name %></td>
+                    <td><%= spe_base %></td>
+                    <td><input type="number" id="spe_bonus" value="<%= spe_bonus %>" /></td>
+                    <td><input type="number" id="spe_aug" value="<%= spe_aug %>" /></td>
+                    <td><input type="number" id="spe_miss" value="<%= spe_miss %>" /></td>
+                    <td><%= spe_success_perc %></td>
+                    <td><%= spe_total %></td>
+                </tr>
+                <tr>
+                    <td><%= end_name %></td>
+                    <td><%= end_base %></td>
+                    <td><input type="number" id="end_bonus" value="<%= end_bonus %>" /></td>
+                    <td><input type="number" id="end_aug" value="<%= end_aug %>" /></td>
+                    <td><input type="number" id="end_miss" value="<%= end_miss %>" /></td>
+                    <td><%= end_success_perc %></td>
+                    <td><%= end_total %></td>
+                </tr>
+                <tr>
+                    <td><%= spi_name %></td>
+                    <td><%= spi_base %></td>
+                    <td><input type="number" id="spi_bonus" value="<%= spi_bonus %>" /></td>
+                    <td><input type="number" id="spi_aug" value="<%= spi_aug %>" /></td>
+                    <td><input type="number" id="spi_miss" value="<%= spi_miss %>" /></td>
+                    <td><%= spi_success_perc %></td>
+                    <td><%= spi_total %></td>
+                </tr>
+                <tr>
+                    <td><%= mag_name %></td>
+                    <td><%= mag_base %></td>
+                    <td><input type="number" id="mag_bonus" value="<%= mag_bonus %>" /></td>
+                    <td><input type="number" id="mag_aug" value="<%= mag_aug %>" /></td>
+                    <td><input type="number" id="mag_miss" value="<%= mag_miss %>" /></td>
+                    <td><%= mag_success_perc %></td>
+                    <td><%= mag_total %></td>
+                </tr>
+                <tr>
+                    <td><%= int_name %></td>
+                    <td><%= int_base %></td>
+                    <td><input type="number" id="int_bonus" value="<%= int_bonus %>" /></td>
+                    <td><input type="number" id="int_aug" value="<%= int_aug %>" /></td>
+                    <td><input type="number" id="int_miss" value="<%= int_miss %>" /></td>
+                    <td><%= int_success_perc %></td>
+                    <td><%= int_total %></td>
+                </tr>
+                <tr>
+                    <td><%= inf_name %></td>
+                    <td><%= inf_base %></td>
+                    <td><input type="number" id="inf_bonus" value="<%= inf_bonus %>" /></td>
+                    <td><input type="number" id="inf_aug" value="<%= inf_aug %>" /></td>
+                    <td><input type="number" id="inf_miss" value="<%= inf_miss %>" /></td>
+                    <td><%= inf_success_perc %></td>
+                    <td><%= inf_total %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="float" id="destiny-content">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><%= base %></th>
+                    <th><%= bonus %></th>
+                    <th><%= total %></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><%= destiny %></td>
+                    <td><%= destiny_base %></td>
+                    <td><input type="text" id="destiny_bonus" value="<%= destiny_bonus %>" /></td>
+                    <td><%= destiny_total %></td>
+                </tr>
+                <tr>
+                    <td><%= power_point %></td>
+                    <td><%= power_point_base %></td>
+                    <td><input type="text" id="power_point_bonus" value="<%= power_point_bonus %>" /></td>
+                    <td><%= power_point_total %></td>
+                </tr>
+                <tr><td colspan="4"><br/></td></tr>
+                <tr>
+                    <td colspan="3"><%= spell_lvl_max %></td>
+                    <td><%= max_spell_lvl %></td>
+                </tr>
+                <tr><td colspan="4"><br/></td></tr>
+                <tr>
+                    <td colspan="3"><%= spec_current_max %></td>
+                    <td><%= current_spec %> / <%= max_spec %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</script>

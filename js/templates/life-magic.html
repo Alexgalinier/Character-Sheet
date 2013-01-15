@@ -1,0 +1,54 @@
+<script type="text/template" id="tmpl-life-magic">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th><%= base %></th>
+                <th><%= bonus %></th>
+                <th><%= total %></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= life_point %></td>
+                <td><%= life_point_base %></td>
+                <td>
+                    <input type="text" id="life_point_bonus" value="<%= life_point_bonus %>" />
+                </td>
+                <td><%= life_point_total %></td>
+            </tr>
+            <tr>
+                <td><%= life_point_regen %></td>
+                <td><%= regen_short %>/<%= regen_full_short %> - <%= regen_long %>/<%= regen_full_long %></td>
+                <td>
+                    <input type="text" id="regen_bonus" value="<%= regen_bonus %>" />
+                </td>
+                <td><%= regen_short_total %>/<%= regen_full_short_total %> - <%= regen_long_total %>/<%= regen_full_long_total %></td>
+            </tr>
+            <tr>
+                <td><%= resist %></td>
+                <td><%= resist_base %></td>
+                <td>
+                    <input type="text" id="resist_bonus" value="<%= resist_bonus %>" />
+                </td>
+                <td><%= resist_total %></td>
+            </tr>
+            <tr>
+                <td><%= magic_point %></td>
+                <td><%= magic_point_base %></td>
+                <td>
+                    <input type="text" id="magic_point_bonus" value="<%= magic_point_bonus %>" />
+                </td>
+                <td><%= magic_point_total %></td>
+            </tr>
+            <tr>
+                <td><%= magic_point_regen %></td>
+                <td><%= regen_m_short %>/<%= regen_m_full_short %> - <%= regen_m_long %>/<%= regen_m_full_long %></td>
+                <td>
+                    <input type="text" id="regen_m_bonus" value="<%= regen_m_bonus %>" />
+                </td>
+                <td><%= regen_m_short_total %>/<%= regen_m_full_short_total %> - <%= regen_m_long_total %>/<%= regen_m_full_long_total %></td>
+            </tr>
+        </tbody>
+    </table>
+</script>

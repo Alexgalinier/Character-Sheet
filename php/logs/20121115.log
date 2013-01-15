@@ -1,0 +1,65 @@
+/*** LOGGER BEGIN BLOC ***/
+2012-11-15 9:18:18 [DEBUG] Array
+(
+    [id] => 1
+    [name] => tet
+    [damage] => 2
+    [damage_min] => 1
+    [crit] => G
+    [init] => 13
+    [misc] => ttt
+)
+
+2012-11-15 9:18:18 [DEBUG] Array
+(
+)
+
+2012-11-15 9:18:19 [DEBUG] Array
+(
+)
+
+2012-11-15 9:18:19 [DEBUG] Array
+(
+)
+
+/*** LOGGER BEGIN BLOC ***/
+2012-11-15 9:18:51 [DEBUG] Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => tet
+            [damage] => 2
+            [damage_min] => 1
+            [crit] => G
+            [init] => 13
+            [misc] => ttt
+            [fk_player] => 1
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [name] => azea
+            [damage] => 2
+            [damage_min] => 1
+            [crit] => E
+            [init] => 2
+            [misc] => 
+            [fk_player] => 1
+        )
+
+)
+
+2012-11-15 9:18:52 [DEBUG] Array
+(
+)
+
+2012-11-15 9:18:52 [DEBUG] Array
+(
+)
+
+2012-11-15 9:18:52 [DEBUG] Array
+(
+)
+

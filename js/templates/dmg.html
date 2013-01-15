@@ -1,0 +1,38 @@
+<script type="text/template" id="tmpl-dmg">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th><%= base %></th>
+                <th><%= bonus %></th>
+                <th><%= total %></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= weapon_dmg %></td>
+                <td><%= weapon_dmg_base %></td>
+                <td><input type="text" id="weapon_dmg_bonus" value="<%= weapon_dmg_bonus %>" /></td>
+                <td><%= weapon_dmg_total %></td>
+            </tr>
+            <tr>
+                <td><%= weapon_crit %></td>
+                <td><%= weapon_crit_base %></td>
+                <td><input type="text" id="weapon_crit_bonus" value="<%= weapon_crit_bonus %>" /></td>
+                <td>01 - <%= weapon_crit_total %></td>
+            </tr>
+            <tr>
+                <td><%= spell_dmg %></td>
+                <td><%= spell_dmg_base %></d>
+                <td><input type="text" id="spell_dmg_bonus" value="<%= spell_dmg_bonus %>" /></td>
+                <td><%= spell_dmg_total %></td>
+            </tr>
+            <tr>
+                <td><%= spell_crit %></td>
+                <td><%= spell_crit_base %></td>
+                <td><input type="text" id="spell_crit_bonus" value="<%= spell_crit_bonus %>" /></td>
+                <td>01 - <%= spell_crit_total %></td>
+            </tr>
+        </tbody>
+    </table>
+</script>

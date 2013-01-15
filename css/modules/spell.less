@@ -1,0 +1,113 @@
+.spell() {
+    #spell-content {
+        max-width: 1200px;
+        display: none;
+
+        .float {
+            width: 400px;
+            height: 400px;
+            float: left;
+        }
+
+        .spell-lists {
+            &.only-spell {
+                height: 320px;
+
+                &.spec {
+                    table th, table td:nth-child(1) {
+                        color: rgb(150,180,10);
+                    }
+                }
+
+                table td:nth-child(1) {
+                    color: white;
+                    text-shadow: none;
+                    text-align: left;
+                }
+            }
+
+            table {
+                th {
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding: 2px 0 12px 0;
+                }
+
+                td {
+                    text-align: left;
+                    font-weight: normal;
+                    color: rgba(255,255,255,.8);
+
+                    &:nth-child(1) {
+                        text-align: center;
+                        width: 40px;
+                    }
+
+                    p {
+                        text-align: left;
+                        font-style: italic;
+                        padding: 7px;
+                        margin: 0;
+                        color: white;
+                        font-size: 11px;
+                    }
+                }
+
+                .disabled {
+                    td {
+                        color: rgba(255,255,255,.5);
+                    }
+                }
+                .enabled {
+                    td {
+                        color: white;
+                        text-shadow: 0 0 10px white;
+                    }
+                }
+            }
+        }
+
+        .space {
+            height: 100px;
+            width: 1200px;
+            float: left;
+        }
+
+        #show-hide-all-spells {
+            padding: 2em;
+            color: rgb(150,180,10);
+            font-size: 16px;
+            text-align: center;
+            float: left;
+            width: 1200px;
+            cursor: pointer;
+        }
+
+        #legends {
+            width: 1200px;
+            height: auto;
+            
+            td:nth-child(1) {
+                width: 125px;
+                vertical-align: top;
+            }
+            td:nth-child(2) {
+                text-align: left;
+                font-weight: normal;
+            }
+        }
+
+        #misc-per-lvl {
+            height: 320px;
+
+            th:nth-child(4), td:nth-child(4) {
+                color: rgb(150,180,10);
+            }
+
+            td {
+                text-align: center;
+                font-weight: normal;
+            }
+        }
+    }
+}

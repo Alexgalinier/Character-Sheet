@@ -1,0 +1,102 @@
+.skills() {
+    #skill-content {
+        position: relative;
+        display: none;
+        width: 1200px;
+
+        .float {
+            float: left;
+            width: 600px;
+
+            h2 {
+                font-size: 14px;
+                padding: 2px 0 12px 0;
+                cursor: pointer;
+
+                span {
+                    font-size: 80%;
+
+                    &.knowledge {
+                        font-size: 14px;
+                        float: right;
+                    }
+                }
+            }
+
+            table {
+                tr.spec-tr td {
+                     color: rgb(150,180,10);
+                }
+            
+                td {
+                    &:nth-child(1) {
+                        text-align: center;
+                    }
+                    &:nth-child(2) {
+                        text-align: left;
+                    }
+    
+                    small {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+
+        .consult {
+            width: 300px;
+
+            h2 span {
+                display: none;
+                
+                &.knowledge {
+                    display: block;
+                }
+            }
+                
+            table td, table th {
+                &:nth-child(1) { display: none; }
+                &:nth-child(3) { text-align: left; }
+                &:nth-child(4) { display: none; }
+                &:nth-child(5) { display: none; }
+                &:nth-child(6) { display: none; }
+                &:nth-child(7) { display: none; }
+                &:nth-child(8) { display: none; }
+                &:nth-child(9) { display: none; }
+                &:nth-child(10) { 
+                    small {
+                        display: none; 
+                    }
+                }
+            }
+
+            &#skill-1, &#skill-2, &#skill-3, &#skill-4 {
+                height: 450px;
+            }
+            
+            &#skill-5, &#skill-6, &#skill-7, &#skill-8 {
+                height: 500px;
+            }
+        }
+
+        #set-unset-edit {
+            padding: 32px;
+            color: rgb(150,180,10);
+            font-size: 16px;
+            text-align: center;
+            float: left;
+            width: 1200px;
+            cursor: pointer;
+            height: 180px;
+        }
+
+        #skill-1 {height: 370px}
+        #skill-2 {height: 370px}
+        #skill-3 {height: 470px}
+        #skill-4 {height: 470px}
+        #skill-5 {height: 370px}
+        #skill-6 {height: 370px}
+        #skill-7 {height: 510px;}
+        #skill-8 {height: 510px;}
+    }
+}
